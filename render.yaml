@@ -1,0 +1,10 @@
+# render.yaml
+services:
+  - type: web
+    name: http-bridge-service
+    env: node
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: TARGET_URL
+        sync: false
