@@ -1,4 +1,3 @@
-// server.js
 const http = require('http');
 const https = require('https');
 const { URL } = require('url');
@@ -6,7 +5,6 @@ const { URL } = require('url');
 const PORT = process.env.PORT || 3000;
 const TARGET_URL = process.env.TARGET_URL;
 
-// Headers to exclude from forwarding
 const EXCLUDED_HEADERS = new Set([
   'host',
   'connection',
