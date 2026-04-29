@@ -1,16 +1,14 @@
-// package.json
 {
-  "name": "http-bridge-service",
-  "version": "1.0.0",
-  "description": "HTTP bridge service for API integration",
-  "main": "server.js",
+  "name": "netlify-upstream-proxy",
+  "version": "2.0.0",
+  "description": "Enhanced Netlify Edge Function for proxying requests to upstream services",
+  "private": true,
+  "license": "MIT",
   "scripts": {
-    "start": "node server.js"
+    "dev": "netlify dev",
+    "build": "echo 'Build completed - static assets ready'"
   },
-  "engines": {
-    "node": ">=18.0.0"
-  },
-  "keywords": ["http", "bridge", "api", "service"],
-  "author": "",
-  "license": "MIT"
+  "devDependencies": {
+    "netlify-cli": "latest"
+  }
 }
